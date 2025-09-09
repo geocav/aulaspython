@@ -6,6 +6,9 @@ O comando para baixar o repositorio
 git clone <url>
 
 -------
+Verificar como estão os arquivos locais 
+git status 
+
 fiz alguma alteração quero que ela esteja disponivel no github (o site onde ficam os repositorios)
 
 git add -> para adicionar os arquivos alterados
