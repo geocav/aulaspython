@@ -73,6 +73,7 @@ nota = float(input("digite sua nota de 0 a 10"))
 if nota >= 7:   
     print ("aluno aprovado")
 elif nota < 7 and nota >= 5:
+# elif nota >= 5:
     print("Aluno em Recuperação")  
 else:
     print("Aluno Reprovado")
