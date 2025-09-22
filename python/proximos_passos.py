@@ -1,3 +1,7 @@
-# Dicionários: Maneiras de guardar múltiplos dados em uma única variável.
-# Laços de Repetição ( while): Para executar uma mesma tarefa várias vezes sem repetir código.
-# Funções: Para organizar seu código em blocos reutilizáveis.
+Persistência de Dados: Leitura e Escrita de Arquivos
+Lidando com o Inesperado: Tratamento de Erros
+Módulos e Bibliotecas Externas
+
+Organizando Projetos Maiores
+Criação de Módulos
+Ambientes Virtuais
