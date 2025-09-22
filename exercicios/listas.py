@@ -11,13 +11,21 @@
 # 3.  Adicionar uma nova música à sua playlist.
 # 4.  Retire a primeira música que você havia adicionado.
 # 5.  Mostre a playlist atualizada e diga quantas músicas ela tem.
-
-
+# RESPOSTA:
+# playList = ["musica 1","musica 2", "musica 3"]
+# print(playList)
+# print(playList[0])5
+# print(playList[-1])
 # Exercício 2: Acesso Secreto
 
 # 1.  Crie uma lista chamada `convidados` com o nome de 5 pessoas.
 # 2.  Exiba uma mensagem de boas-vindas para a primeira pessoa da lista.
 # 3.  Exiba uma mensagem especial para a última pessoa da lista.
+# RESPOSTA:
+# convidados = ["nome1","nome2","nome3","nome4","nome5"]
+# print("seja bem vida ", convidados[0])
+# print("seja bem vida ", convidados[-1])
+
 
 #  Nível 2: O Poder do `for`
 
@@ -27,15 +35,20 @@
 
 # 1.  Peça ao usuário para digitar um número inteiro.
 # 2.  Use um laço `for` com a função.
-# 3.  Dentro do laço, calcule e imprima a tabuada do número digitado pelo usuário.
-     
+# 3.  Dentro do laço, calcule e6 imprima a tabuada do número digitado pelo usuário.
+# RESPOSTA:
+# numero1 = int(input("digite um numero "))
+# for i in range(10):
+#     print(i * numero1)
 
 # Exercício 4: Nomes na Vertical
 
 # 1.  Crie uma lista de `nomes` com pelo menos 4 nomes.
 # 2.  Use um laço `for` para percorrer a lista.
 # 3.  Dentro do laço, imprima cada nome com uma mensagem, um por linha.
-     
+# convidados = ["nome1","nome2","nome3","nome4","nome5"]
+# for i in convidados:
+#     print(i)
 
 #  Nível 3: Combinando Tudo
 
@@ -50,7 +63,22 @@
 # 5.  Fora do laço, calcule a `media` (`soma_das_notas / len(notas)`).
 # 6.  Exiba a média final. Se a média for maior ou igual a 7, dê os parabéns\! Caso contrário, diga para o aluno se esforçar mais.
 
-# Exercício 6: Filtrando Números Positivos
+# notas=[]
+# for i in range(4):
+#     notaNova = int(input("nota: "))
+#     notas.append(notaNova)
+
+# soma_das_notas = 0
+# for i in notas:
+#     soma_das_notas += i
+
+# media = soma_das_notas/len(notas)   
+# print("sua media é: ", media)
+# if media >= 7:
+#     print("APROVADO")
+# else:
+#     print("REPROVADO")
+
 
 # 1.  Crie uma lista chamada `numeros` que contenha números positivos e negativos. Ex: `[10, -5, 8, -12, 3, -20]`.
 # 2.  Crie uma lista vazia chamada `positivos`.
@@ -58,6 +86,13 @@
 # 4.  Dentro do laço, use um `if` para verificar se o número da vez é maior ou igual a zero.
 # 5.  Se for, adicione-o à lista `positivos`.
 # 6.  No final, fora do laço, imprima a lista `positivos`.
+
+# numeros=[10, -5, 8, -12, 3, -20]
+# positivos=[]
+# for i in numeros:
+#     if i >= 0:
+#         positivos.append(i)
+# print(positivos)
 
 #  Desafio Final: Pequeno Sistema de Supermercado
 
@@ -73,3 +108,15 @@
 #        Se o produto existir, adicione-o ao `carrinho_de_compras` e informe ao usuário.
 #        Se não existir, avise que o produto não está disponível.
 # 5.  No final do programa, exiba todos os itens que o usuário adicionou ao `carrinho_de_compras`.
+carrinho_de_compras=[]
+produtos_disponiveis=["arroz", "feijão", "óleo", "sal", "açúcar"]
+print(produtos_disponiveis)
+
+for i in range(3):
+    item = input("qual item quer: ")
+    if item in produtos_disponiveis:
+        carrinho_de_compras.append(item)
+        print(item, "foi adicionado")
+    else:
+        print("produto não está disponível")
+print("Seu carrinho de compra é: ", carrinho_de_compras)
