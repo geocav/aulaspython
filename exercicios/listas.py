@@ -7,15 +7,35 @@
 # Exercício 1: Minha Playlist
 
 # 1.  Crie uma lista chamada `playlist` com o nome de 3 das suas músicas favoritas.
+playList = ["musica 1","musica 2", "musica 3"]
+
 # 2.  Exibir a lista completa.
-# 3.  Adicionar uma nova música à sua playlist.
-# 4.  Retire a primeira música que você havia adicionado.
-# 5.  Mostre a playlist atualizada e diga quantas músicas ela tem.
-# RESPOSTA:
-# playList = ["musica 1","musica 2", "musica 3"]
 # print(playList)
-# print(playList[0])5
+
+# 3.  Adicionar uma nova música à sua playlist.
+# novaMusica = input("Qual musica voce quer adicionar?")
+# playList.append(novaMusica)
+
+# 4.  Retire a primeira música que você havia adicionado.
+# playList.remove("musica 1")
+
+# Faz a remoção por id
+# del playList[1]
+
+# Retira da lista e armazena em uma variavel
+# playlistRemovida = playList.pop(1)
+
+# print("Minha playlist final é:", playlistRemovida)
+
+# 5.  Mostre a playlist atualizada e diga quantas músicas ela tem.
+
+# print("\n--- Resultado Final ---")
+# print("Minha playlist final é:", playList)
+# print("Ela tem", len(playList), "músicas.")
+
+# print(playList[0])
 # print(playList[-1])
+
 # Exercício 2: Acesso Secreto
 
 # 1.  Crie uma lista chamada `convidados` com o nome de 5 pessoas.
@@ -38,7 +58,8 @@
 # 3.  Dentro do laço, calcule e6 imprima a tabuada do número digitado pelo usuário.
 # RESPOSTA:
 # numero1 = int(input("digite um numero "))
-# for i in range(10):
+# A função range(1, 11) é usada para gerar uma sequência de números que começa no 1 e vai até antes do 11 (ou seja, 10)
+# for i in range(1,11):
 #     print(i * numero1)
 
 # Exercício 4: Nomes na Vertical
@@ -63,21 +84,21 @@
 # 5.  Fora do laço, calcule a `media` (`soma_das_notas / len(notas)`).
 # 6.  Exiba a média final. Se a média for maior ou igual a 7, dê os parabéns\! Caso contrário, diga para o aluno se esforçar mais.
 
-# notas=[]
-# for i in range(4):
-#     notaNova = int(input("nota: "))
-#     notas.append(notaNova)
+notas=[]
+for i in range(4):
+    notaNova = int(input("nota: "))
+    notas.append(notaNova)
 
-# soma_das_notas = 0
-# for i in notas:
-#     soma_das_notas += i
+soma_das_notas = 0
+for i in notas:
+    soma_das_notas += i
 
-# media = soma_das_notas/len(notas)   
-# print("sua media é: ", media)
-# if media >= 7:
-#     print("APROVADO")
-# else:
-#     print("REPROVADO")
+media = soma_das_notas/len(notas)   
+print("sua media é: ", media)
+if media >= 7:
+    print("APROVADO")
+else:
+    print("REPROVADO")
 
 
 # 1.  Crie uma lista chamada `numeros` que contenha números positivos e negativos. Ex: `[10, -5, 8, -12, 3, -20]`.
